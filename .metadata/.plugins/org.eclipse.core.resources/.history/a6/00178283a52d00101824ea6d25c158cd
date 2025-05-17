@@ -1,0 +1,16 @@
+
+public class EachWordreverse {
+
+	public static void main(String[] args) {
+
+	String s1= "Hello World";
+	String[] xyz = s1.split("");
+	 StringBuffer result = new StringBuffer(s1);
+	 for(String abc : xyz) {
+		 StringBuffer sb = new StringBuffer(abc);
+		 result.append(sb.reverse());
+	 }
+	 System.out.println(result);
+	}
+
+}

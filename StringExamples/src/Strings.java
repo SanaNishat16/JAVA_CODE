@@ -1,0 +1,21 @@
+
+public class Strings {
+
+	public static void main(String[] args) {
+String[] str = {"clara","mary","joseph"};
+
+System.out.println(str.length);
+//System.out.println(str.length());
+//System.out.println(str[1].length);
+System.out.println(str[1].length());
+
+
+String str2 = null;
+//System.out.println(str2.length);
+System.out.println(str2.length());
+
+
+
+	}
+
+}

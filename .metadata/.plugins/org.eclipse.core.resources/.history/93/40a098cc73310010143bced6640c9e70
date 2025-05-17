@@ -1,0 +1,38 @@
+package in.methodexample;
+
+class bankAccount{
+	
+	String accountHoldername;
+	long accountHolderNumber;
+	double accountBalance;
+	
+	void deposit(double amount) {
+		if(amount > 0) {
+			accountBalance += amount;
+			System.out.println("deposit amount"+ amount);
+			
+		}else {
+			System.out.println("can't deposit money"+ amount);
+		}
+		
+	}
+	double withdrawl(double amount) {
+		return accountBalance -= amount;
+	}
+	
+	
+	void getBalance(double amount) {
+		System.out.println("bankBalance" + accountBalance);
+	}
+	}
+
+
+
+
+public class Test {
+
+	public static void main(String[] args) {
+
+	}
+
+}

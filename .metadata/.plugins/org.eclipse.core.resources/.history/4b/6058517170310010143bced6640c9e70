@@ -1,0 +1,42 @@
+package in.MethodExample;
+
+class bankAccount{
+	
+	String accountHoldername;
+	long accountHolderNumber;
+	double accountBalance;
+	
+	void deposit(double amount) {
+		if(amount > 0) {
+			System.out.println("deposit amount"+ amount);
+			
+		}else {
+			System.out.println("can't deposit money"+ amount);
+		}
+	
+		
+	
+	
+	
+	}
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+public class Test {
+
+	public static void main(String[] args) {
+
+	}
+
+}

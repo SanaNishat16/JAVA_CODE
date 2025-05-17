@@ -1,0 +1,42 @@
+package in.methodexample;
+
+//create a class Insurancepolicy with variables policynumber, policyholdername, policycoverageamount
+// define a method calculatepremium() and calculate premium to pay as 15% of the coverageamount
+// define another method display(), to show the policy details  policynumber, policyholdername, coverage amount and premium.
+
+class Insurance{
+	long policyNumber;
+	String policyHolderName;
+	double policyCoverageAmount;
+	
+	void calculatePremium() {
+		 double premium = policyCoverageAmount *0.15; 
+		 System.out.println("premium " + premium);
+	}
+	
+	void display() {
+		System.out.println("policyNumber " + policyNumber );
+		System.out.println("policyHolderName " + policyHolderName);
+		System.out.println("policyCoverageAmount "+ policyHolderName);
+		
+		//System.out.println("premium "+ calculatepremium);
+	}
+	
+	
+}
+public class InsurancePolicy {
+
+	public static void main(String[] args) {
+
+		Insurance ins = new Insurance();
+		
+		ins.policyNumber = 7659675648l;
+				
+		ins.policyHolderName = " Gazali";
+		ins.policyCoverageAmount = 500000;
+		
+		ins.calculatePremium();
+		ins.display();
+	}
+
+}

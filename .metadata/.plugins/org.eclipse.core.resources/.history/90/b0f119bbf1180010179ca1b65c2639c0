@@ -1,0 +1,80 @@
+import java.util.Arrays;
+
+public class Revision {
+
+	public static void main(String[] args) {
+		
+		int arr[]= {70,33,53,17,25,93,92};
+	
+		
+		Arrays.sort(arr);
+		int searchElement = 83;
+		boolean flag= binarySearch(arr,searchElement); 
+	}
+		private static boolean binarySearch(int arr[], int searchElement) {
+			
+			
+			int low = 0;
+			int high = arr.length-1;
+			
+			
+			//boolean flag = false;
+			
+			while (low <= high ){
+				int midpoint = (low + high)/2;
+				if(arr[midpoint] == searchElement) {
+					System.out.println("Element found");
+					 return true;
+					
+				}else if(arr[midpoint] < searchElement) {
+					low = midpoint + 1;
+				}else {
+					high= midpoint - 1;
+				}
+				}
+			return false;
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			}
+				}
+				
+			
+	/*
+	int arr[] = {1,1,2,3,2,3,3,3,4,5,5,4,4};
+    findMaxConsecutive(arr);
+}
+	private static void findMaxConsecutive(int arr[]) {
+		
+		int maxi = 0;
+		int count= 1;
+		int element = arr[0];
+		
+		for(int i = 0; i <arr.length-1; i++) {
+			if (arr[i]==arr[i+1]) {
+				count ++;
+			}else {
+				count = 1;
+			}
+			if (count > maxi) {
+				maxi = count;
+				element = arr[i];
+			}
+		}
+			System.out.println(element);
+			System.out.println(maxi);
+
+*/
+
+

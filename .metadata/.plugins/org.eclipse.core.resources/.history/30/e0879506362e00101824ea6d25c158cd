@@ -1,0 +1,23 @@
+import java.util.*;
+public class EachWordreverse {
+
+	public static void main(String[] args) {
+
+		String s1 = "Welcome to the jungle";
+		String[] s2 = s1.split(" ");
+
+		
+		
+		for(String words: s2) {
+			StringBuffer sb = new StringBuffer(words);
+			System.out.println(sb.reverse());
+		}
+		
+	}
+
+      
+		
+
+		}
+	}
+

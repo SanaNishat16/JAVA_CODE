@@ -1,0 +1,69 @@
+
+public class Comparison {
+
+	public static void main(String[] args) {
+		                           
+		 String s1 = "hello";
+		 String s2 = new String ("hello");
+		 System.out.println(s1 == s2);
+
+	String str1 = new String("Java");
+	String str2 = str1;
+	System.out.println(str1==str2);
+	
+	String str = "Sky";
+	String str3 ="sky";
+	System.out.println(str==str3);
+
+	
+	String a = "dell";
+	String b = new String("dell");
+	System.out.println(a==b);
+	System.out.println(a.equals(b));
+	
+	
+	String c = new String("lenovo");
+	String d = new String("Lenovo");
+	System.out.println(c==d);
+	System.out.println(c.equals(d));
+	
+	
+	String username = "admin";
+	System.out.println(username.equalsIgnoreCase("admin"));
+	
+	
+	String username1 = "Admin";
+	String username2 = "admin";
+	
+	System.out.println(username1.compareTo(username2));
+	System.out.println(username2.compareTo(username1));
+	
+	String f = new String("Java");
+	String e = new String("Java");
+	System.out.println(f.compareTo(e));
+	
+	//*******SUBSTRING********//
+	
+	String g = "the sky is blue";
+	String h = g.substring(4,10);
+	System.out.println(g);
+	System.out.println(h);
+
+	String i = g.substring(4);
+	System.out.println(i);
+	
+	String j = g.substring(4,17);
+	
+	
+	///******CHAR AT AND INDEX AT*******\\
+	
+ String k = "the cat sat";
+ System.out.println(k.charAt(5));
+ System.out.println(k.charAt(8));
+ 
+	
+	
+	
+	}
+
+}

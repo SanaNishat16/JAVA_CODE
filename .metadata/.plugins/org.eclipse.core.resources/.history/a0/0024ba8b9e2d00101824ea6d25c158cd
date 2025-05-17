@@ -1,0 +1,15 @@
+
+public class EachWordreverse {
+
+	public static void main(String[] args) {
+
+		String s = "Welcome to the jungle";
+		String t ="";
+		StringBuffer sb = new StringBuffer(s);
+		sb = sb.split(" ").reverse();
+		t = sb.append();
+		System.out.println(t.toString());
+		
+	}
+
+}
