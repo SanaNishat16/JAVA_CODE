@@ -46,8 +46,35 @@ public class Test {
 		account1.withdrawl(money);
 		System.out.println("withdrawl amount "+money );
 		System.out.println("afterwithdrawl amount  "+ account1.accountBalance);
+		System.out.println("afterwithdrawl amount  "+ account1.accountBalance);
+
+
 		
 		
 	}
+public static void main1() {
+		
+		bankAccount account1 = new bankAccount();
+		
+		account1.accountHoldername = "Sana";
+		account1.accountHolderNumber = 119911001100012l;
+		account1.accountBalance = 70000.00;
+		
+		
+		account1.getBalance(70000);
+		
+		account1.deposit(12000);
+		System.out.println("afterdepositBalance  " + account1.accountBalance );
+		double money =5000.0;
+		account1.withdrawl(money);
+		System.out.println("withdrawl amount "+money );
+		System.out.println("afterwithdrawl amount  "+ account1.accountBalance);
+		System.out.println("afterwithdrawl amount  "+ account1.accountBalance);
+
+
+		
+		
+	}
+
   
 }
